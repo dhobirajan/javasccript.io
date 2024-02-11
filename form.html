@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <form name="form1">
+        name: <input type="text" name="uname"><br>
+        gender: <input type="radio" name="r1" value="male">male
+                <input type="radio" name="r1" value="female">female<br>
+        hobby: <input type="checkbox" name="x" class="a1" value="cricket">cricket
+        <input type="checkbox" name="y" class="a1" value="kabaddi">kabaddi
+        <input type="checkbox" name="z" class="a1" value="box cricket"> box cricket<br>
+        <button onclick="f1()">submit</button>
+
+
+    </form>
+</head>
+<body>
+    <script>
+        function f1(){
+            uname=document.form1.uname.value;
+            gender=document.getElementsByName("r1");
+            h=document.getElementsByClassName("a1");
+            
+            ho=" ";
+            for(i=0;i<gender.length;i++){
+                if(gender[i].checked==true){
+                    gen=gender[i].value;
+                }
+            }
+            for(i=0;i<h.length;i++){
+                if(h[i].checked==true){
+                    ho+=h[i].value+" ,";
+                }
+            }
+            document.write("username: "+uname+"</br>");
+            document.write("gender: "+gen+"</br>");
+            document.write("hobby: "+ho+"</br>")
+        }
+    </script>
+</body>
+
+</html>

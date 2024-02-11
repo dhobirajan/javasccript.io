@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">red</p>
+    <p id="p2">green</p>
+    <p id="p3">grey</p>
+    <p id="p4">hi rajan hello</p>
+    <p id="p5">HI INDRA</p>
+    <button onclick="call1()">red</button>
+    <button onclick="call2()">green</button>
+    <button onclick="call3()">grey</button>
+    <button onclick="call4()">upper</button>
+    <button onclick="call5()">lower</button>
+    <script>
+        function call1(){
+            document.getElementById("p1").style.color="red";
+        }
+        function call2(){
+            document.getElementById("p2").style.color="green";
+        }
+        function call3(){
+            document.getElementById("p3").style.color="grey";
+        }
+        function call4(){
+            document.getElementById("p4").style.textTransform="uppercase";
+        }
+        function call5(){
+            document.getElementById("p5").style.textTransform="lowercase";
+        }
+        
+        
+    </script>
+</body>
+</html>

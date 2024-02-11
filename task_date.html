@@ -1,0 +1,23 @@
+<!-- write is that use a function to calculate how many 
+days are left in your birthday -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        Dob=new Date("2025-1-11");
+        c_date=new Date();
+        x=c_date.getTime();
+        y=Dob.getTime();
+
+        day=Math.abs(y-x);
+        document.write(day+"</br>");
+        document.write(Math.round((day)/(24*60*60*1000)));
+    </script>
+</body>
+</html>

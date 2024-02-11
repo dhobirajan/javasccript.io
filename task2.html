@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <img src="https://cdn.pixabay.com/photo/2017/10/24/18/17/rose-2885586_960_720.jpg" id="im1">
+   <button onclick="f1()">click</button>
+   <button onclick="f2()">reset</button> 
+   <script>
+    function f1(){
+        document.getElementById("im1").src="https://th.bing.com/th/id/R.a2b365b10f28e09a5c55d8e7d8396640?rik=vEKlkM6MwkCwBg&riu=http%3a%2f%2fwww.fabiovisentin.com%2fphotography%2fphoto%2f12%2fwhite-rose-satin-1920x1200-fabiovisentincom09501.jpg&ehk=tK9FBzfWkI9CPs%2bqIWn%2bSuQkleeNbANmbnYF7rlQrgU%3d&risl=&pid=ImgRaw&r=0";
+    }
+    function f2(){
+        document.getElementById("im1").src="https://cdn.pixabay.com/photo/2017/10/24/18/17/rose-2885586_960_720.jpg";
+    }
+   </script>
+</body>
+</html>

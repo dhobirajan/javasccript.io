@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p style="color:red" class="c1">RED</p>
+    <p style="color:blue" class="c1">blue</p>
+    <p style="color:grey">grey</p>
+    <button onclick="cell()">click here</button>
+    <script>
+        function cell(){
+            c1=document.getElementsByClassName("c1");
+            for(i=0;i<c1.length;i++){
+                c1[i].innerHTML="text change";
+            }
+
+        }
+    </script>
+</body>
+</html>

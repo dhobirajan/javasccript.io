@@ -1,0 +1,22 @@
+<!-- when click any key then return its value and change the back ground color -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onkeyup="fun(this)" onkeypress="fun1(event)" onkeydown="fun2(this)">
+    <script>
+        function fun(id){
+            id.style.backgroundColor="blue";
+        }
+        function fun1(e){
+            alert(e.keyCode);
+        }
+        function fun2(id){
+            id.style.backgroundColor="red";
+        }
+    </script>
+</body>
+</html>

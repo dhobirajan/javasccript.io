@@ -1,0 +1,19 @@
+<!-- onchange(change the value and show),onfocuse,onblur -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function upper(id){
+            id.value=id.value.toUpperCase();
+        }
+    </script>
+    <input type="text" value="hello" onchange="upper(this)"><br>
+    <input type="text" value="hello" onblur="this.style.backgroundColor='yellow'"><br>
+    <input type="text" value="hello" onfocus="this.style.backgroundColor='pink'">
+</body>
+</html>

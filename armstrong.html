@@ -1,0 +1,29 @@
+<!-- armstrong number -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number=prompt("enter the number");
+        len=number.length
+        sum=0
+        temp=number
+        while(number>0){
+            m=number%10;
+            sum=sum+Math.pow(m,len);
+            number=parseInt(number/10);
+        }
+        if(sum==temp){
+            document.write(temp+": this is armstrong number")
+        }
+        else{
+            document.write("not armstrong")
+        }
+    </script>
+</body>
+</html>

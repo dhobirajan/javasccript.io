@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        result=confirm("do you want to continue");
+        if (result==true){
+            document.write("you will continue..</br>")
+        }
+        else{
+            document.write("you will not continue..</br>")
+        }
+        person=prompt("enter your Name");
+        if (person==null || person==" "){
+            text="user canccelled the promt";
+        }
+        else{
+            text="hello "+person+" how are you today?";
+        }
+        document.write(text)
+    </script>
+</body>
+</html>

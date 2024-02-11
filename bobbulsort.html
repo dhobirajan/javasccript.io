@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        a_1=[5,1,3,2,4,6,7];
+        for(i=0;i<a_1.length;i++){
+            for(j=i+1;j<a_1.length;j++){
+                if(a_1[i]>a_1[j]){
+                    temp=a_1[i];
+                    a_1[i]=a_1[j];
+                    a_1[j]=temp;
+                }
+            }
+        }
+        document.write("sorted array:"+a_1)
+    </script>
+</body>
+</body>
+</html>
